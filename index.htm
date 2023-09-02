@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Microsoft YaHei , sans-serif;
+
+        }
+        body {
+            background-color: black;
+            color: white;
+           
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+          
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        h1::after{
+
+            content: "";
+           position: absolute;
+            bottom: -20px;
+            left: 0px;
+            height: 3px;
+            width: 0%;
+            background-color: white;
+            transition: all ease 1s;
+
+
+        }
+
+        h1:hover::after{
+            width: 100%;
+        }
+
+        form {
+            max-width: 90%;
+            margin: 0 auto;
+           
+            
+        }
+
+        label, input, button {
+           
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            background-color: #333;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+             
+        }
+
+        button {
+            color: #fff;
+            background-color: #0592bd;
+            cursor: pointer;
+            
+        }
+
+        button:hover{
+           background: #057ab1;
+        }
+
+        @media (min-width: 768px) {
+            /* Add tablet and desktop styles here */
+        }
+
+        input[type=submit]{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Bank</h1><br><br>
+        <form>
+           
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+
+           
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+
+           
+            <input type="text" id="bankAccount" name="bankAccount" placeholder="Bank Account" required>
+
+           
+            <input type="text" id="bankName" name="bankName" placeholder="Bank Name" required>
+
+           
+            <input type="text" id="ifsc" name="ifsc" placeholder="IFSC" required>
+
+            
+            <input type="password" id="withdrawalPassword" name="withdrawalPassword" placeholder=" Enter Withdrawal password" required> 
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
